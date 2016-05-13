@@ -8,14 +8,14 @@ This module is a _brief_ introduction to using the [Angular.js](https://angularj
 **Contents**
 
 - [Resources](#resources)
-- [Why Use Angular for Visualization?](#why-use-angular-for-visualization)
 - [Model-View-Controller Structure](#model-view-controller-structure)
 - [Angular in HTML](#angular-in-html)
   - [Directives](#directives)
   - [Expressions](#expressions)
 - [Angular in JavaScript](#angular-in-javascript)
+  - [Set-up](#set-up)
   - [$scope](#scope)
-- [Custom Directives](#custom-directives)
+- [Reading Data](#reading-data)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
