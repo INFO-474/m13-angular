@@ -35,7 +35,7 @@ Before we consider the reasons for using Angular, we'll need to discuss the reas
 As your visualizations scale in complexity, it becomes increasingly difficult to keep track of the state of your application -- which gender should be displayed on the chart? Which color encoding is currently being used? How do I move through a story? Did I propagate the data changes to _all_ relevant charts? Tracking this information in a variety of JavaScript variables is error prone and tedious. The Angular framework will enforce a consistent state between your data and your DOM, relieving you of the responsibility of updating the DOM whenever your data or a selection is changed.
 
 ## Model-View-Controller Structure
-Angular uses a [Model-View-Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)-like architecture that **abstracts data from visual representations**. The primary purpose of the MVC structure is ensure consistency throughout your application, alleviating the worry of figuring out when to update the DOM. At it's core, the concept is simple: when the data (`model`) is changed, that change should be reflected on the DOM (`view`). This way, anytime a variable changes that should change the output, that change is made automatically (and without you having to write the code to do it).
+Angular uses a [Model-View-Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)-like architecture that **abstracts data from visual representations**. The primary purpose of the MVC structure is ensure consistency throughout your application, alleviating the worry of figuring out when to update the DOM. At its core, the concept is simple: when the data (`model`) is changed, that change should be reflected on the DOM (`view`). This way, anytime a variable changes that should change the output, that change is made automatically (and without you having to write the code to do it).
 
 A huge advantage of this structure is that your data (`model`) can be connected to multiple different representations on the DOM (`view`s). Now, instead of worrying about whether or not you've properly propagated changes to various DOM elements, all you have to do is make changes to your model, and Angular will take care of the rest.
 
@@ -135,7 +135,7 @@ Using JavaScript, you can create the _applications_ that you reference in your H
 var app = angular.module('my-app', []); // note the empty array of dependencies is required
 ```
 
-Bote the empty array of dependencies is **required** for this to execute properly. Once we have a module defined, we can define a controller for our module. Note, Angular supports **method chaining**, so there's technically no need to keep the module defined in a variable:
+Note the empty array of dependencies is **required** for this to execute properly. Once we have a module defined, we can define a controller for our module. Note, Angular supports **method chaining**, so there's technically no need to keep the module defined in a variable:
 
 ```javascript
 // Declare an Angular module `my-app` with no dependencies, store it in a variable for reference
